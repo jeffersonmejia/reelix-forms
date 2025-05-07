@@ -6,7 +6,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Práctica con formularios</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/response.css">
+    
 </head>
 <body>
    <main>

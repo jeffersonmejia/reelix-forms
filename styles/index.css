@@ -29,7 +29,7 @@ header img {
 }
 
 header h2 {
-  color: rgb(253, 255, 157);
+  color: white;
   display: flex;
   gap: 16px;
 }
@@ -47,11 +47,10 @@ header img {
 }
 
 input,
-.primary-btn, .secondary-btn {
+.primary-btn,
+.secondary-btn {
   border-radius: 4px;
 }
-
-
 
 header figcaption {
   position: absolute;
@@ -135,7 +134,7 @@ legend h3 {
   margin-left: auto;
 }
 
-.secondary-btn{
+.secondary-btn {
   background-color: rgb(202, 202, 202);
   width: fit-content;
   border: none;
@@ -171,11 +170,11 @@ footer small {
   display: block;
 }
 
-.img-hidden{
+.img-hidden {
   display: none;
 }
 
-.img-loaded{
+.img-loaded {
   display: flex;
   width: 250px;
   height: 250px;
