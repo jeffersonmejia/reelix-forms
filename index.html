@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- METADATA -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reelis: Disfruta de tus series y películas favoritas</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <!-- STYLES -->
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+
+<body>
+  <main>
+    <header>
+      <figure>
+        <img src="images/cover.jpg" alt="" />
+        <figcaption>
+          <h2>No estoy en peligro, soy el peligro.</h2>
+        </figcaption>
+      </figure>
+    </header>
+    <section>
+      <form action="response.php" method="post">
+        <legend>
+          <h3>¿Eres nuevo? Regístrate</h3>
+          <small>Ingresa tus datos personales</small>
+        </legend>
+        <fieldset class="input-group">
+          <label for="">nombres</label>
+          <input type="text" name="name" />
+        </fieldset>
+        <fieldset class="input-group">
+          <label for="">Apellidos</label>
+          <input type="text" name="lastname" />
+        </fieldset>
+        <fieldset class="input-group gender-group">
+          <label for="">Género</label>
+          <div class="gender-box">
+            <input type="radio" name="gender" value="male" />
+            <label for="">Masculino</label>
+          </div>
+          <div class="gender-box">
+            <input type="radio" name="gender" value="female" />
+            <label for="">Femenino</label>
+          </div>
+        </fieldset>
+        <fieldset class="input-group">
+          <label for="">Fecha de nacimiento</label>
+          <input type="date" name="date" />
+        </fieldset>
+        <fieldset class="input-group">
+          <label for="">Teléfono</label>
+          <input type="tel" name="tel" />
+        </fieldset>
+        <fieldset class="input-group">
+          <label for="">Correo electrónico</label>
+          <input type="email" name="email" />
+        </fieldset>
+        <fieldset class="input-group">
+          <label for="">Contraseña</label>
+          <input type="password" name="password" />
+        </fieldset>
+        <fieldset class="input-group profile-group">
+          <label for="">Foto de perfil</label>
+          <input type="file" accept="image/*" name="profile-picture" id="profile-pic-input" />
+          <img src="" alt="profile-pic" id="profile-pic-img" class="img-hidden">
+        </fieldset>
+        <fieldset class="input-group">
+          <label for="">País</label>
+          <select name="country" id="">
+            <option value="Ecuador">
+              Ecuador
+            </option>
+            <option value="Peru">
+              Perú
+            </option>
+            <option value="Colombia">
+              Colombia
+            </option>
+            <option value="Brasil">
+              Brasil
+            </option>
+            <option value="Chile">
+              Chile
+            </option>
+            <option value="Argentina">
+              Argentina
+            </option>
+          </select>
+        </fieldset>
+        <fieldset class="input-group terms-group">
+          <input type="checkbox" name="terms" />
+          <label for="">Acepto <a href="" target="_blank">términos</a> y
+            condiciones</label>
+        </fieldset>
+        <fieldset class="input-group terms-group">
+          <input type="reset" value="Reset" class="secondary-btn" id="reset-signup" />
+          <input type="submit" value="Registrarme" class="primary-btn" />
+        </fieldset>
+
+      </form>
+      <form action="response.php" class="form-login" method="GET">
+        <legend>
+          <h3>¿Ya tienes cuenta? Ingresa</h3>
+        </legend>
+        <fieldset class="input-group">
+          <label for=""> Correo electrónico </label>
+          <input type="text" name="email" />
+        </fieldset>
+        <fieldset class="input-group">
+          <label for=""> Contraseña </label>
+          <input type="password" name="password" />
+        </fieldset>
+
+        <input type="submit" value="Ingresar" class="primary-btn" />
+      </form>
+    </section>
+  </main>
+  <footer>
+    <small>Reelix 2025</small>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
